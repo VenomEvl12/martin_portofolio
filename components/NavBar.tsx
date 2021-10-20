@@ -2,7 +2,7 @@ import React from 'react'
 import style from './NavBar.module.sass'
 
 const NavBar = () => {
-    const menus = ['Home', 'About', 'Skill', 'Project']
+    const menus = ['Home', 'About', 'Skill', 'Project', 'Contact']
 
     return (
         <div id={style['container']}>

@@ -1,45 +1,32 @@
 import type { NextPage } from 'next'
-import { useEffect, useState } from 'react'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import NavBar from '../components/NavBar'
 import Project from '../components/Project'
 import Skill from '../components/Skill'
 import style from '../styles/home.module.sass'
+import ScrollAnimation from 'react-animate-on-scroll'
+import "animate.css/animate.compat.css";
 
 const Home: NextPage = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    }
-
-    handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-
-  }, [])
 
   return (
     <div id={style['container']}>
       <NavBar></NavBar>
       <div className={style['parallax']}>
-        <div id={style['home-container']}>
-            <div className={style['introduction-hello']}>
-              Hello, My Name is
+          <ScrollAnimation animateIn="bounceInRight" delay={300}>
+            <div id={style['home-container']}>
+                  <div className={style['introduction-hello']}>
+                    Hello, My Name is
+                  </div>
+                  <div className={style['introduction-name']}>
+                    Martin Wijaya
+                  </div>
             </div>
-            <div className={style['introduction-name']}>
-              Martin Wijaya
-            </div>
-        </div>
+          </ScrollAnimation>
       </div>
       <div>
-        <About scrollY={scrollY}></About>
+        <About></About>
         <Skill></Skill>
         <Project></Project>
         <Contact></Contact>
