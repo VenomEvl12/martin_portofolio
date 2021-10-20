@@ -1,0 +1,77 @@
+@use 'styles/colors'
+    
+#container
+    width: 100%
+    height: 100%
+    padding-bottom: 5rem
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-image: url('../public/assets/galaxy.gif')
+    background-size: 100% 100%
+    background-repeat: no-repeat
+    color: white
+    
+
+    .title
+        margin-top: 4rem
+        font-size: 2em
+        h2
+            font-weight: 400
+            margin: 0
+
+    #contact-container
+        box-shadow: 0px 2px 10px 5px colors.$mid-grey
+        margin-top: 2rem
+        padding-bottom: 3rem
+        background-color: white
+        width: 55%
+        form
+            display: flex
+            flex-direction: column
+            align-items: center
+            color: black
+            label
+                margin-top: 2rem
+                display: flex
+                flex-direction: column
+                width: 50%
+
+                input
+                    margin-top: 0.5rem
+                    border: 1px solid rgb(200, 200, 200)
+                    padding: 0.5rem
+                    transition: 0.5s
+                    outline-color: rgb(255, 255, 255)
+
+                textarea
+                    padding: 3%
+                    margin-top: 0.5rem
+                    resize: none
+                    border: 1px solid rgb(200,200, 200)
+                    outline-color: rgb(255, 255, 255)
+                    transition: 0.5s
+
+                input:focus
+                    outline-color: rgb(255, 0, 255)
+
+                textarea:focus
+                    outline-color: rgb(255, 0, 255)
+
+            button
+                border-radius: 5px
+                background-color: colors.$mid-blue
+                border: 0
+                color: white
+                padding-top: 0.5rem
+                padding-bottom: 0.5rem
+                width: 50%
+                margin-top: 2rem
+                transition: all 0.2s
+
+            button:hover
+                cursor: pointer
+                background-color: colors.$mid-darker-blue
+                
+            button:focus
+                background-color: colors.$blue

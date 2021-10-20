@@ -1,0 +1,68 @@
+@use 'styles/colors'
+
+#container
+    height: 100%
+    width: 100%
+    padding-left: 15vw
+    padding-right: 15vw
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    .title
+        margin-top: 5vh
+        font-size: 2.5em
+        font-weight: 500
+        text-decoration: underline
+
+    @media (max-width: 667px)
+        #container-description
+            grid-template-rows: 4fr 1fr
+            grid-template-columns: auto !important
+        .my-image
+            margin-top: 4vh
+
+    #container-description
+        margin-bottom: 15vh
+        margin-top: 6vh
+        width: 100%
+        height: 40vh
+        border: 1px solid colors.$very-light-grey
+        box-shadow: 0px 8px 8px colors.$light-grey
+        display: grid
+        grid-template-columns: 3fr 1.4fr
+
+        .description
+            display: flex
+            flex-direction: column
+            align-items: center
+            .title-name
+                margin-top: 5vh
+                font-size: 1.5em
+                font-weight: 500
+
+            .biography
+                margin-top: 4vh
+                padding-left: 4vw
+                padding-right: 4vw
+
+        .my-image
+            img
+                width: 100%
+                height: 100%
+
+    .animation-title
+        animation: about-title 1s
+
+@media (max-width: 667px)
+    #container
+        height: 90vh
+
+@keyframes about-title
+    0%
+        transform: scale(0%) rotateX(90deg)
+    60%
+        transform: scale(150%) rotateX(50deg)
+    100%
+        transform: scale(100%)
+        
