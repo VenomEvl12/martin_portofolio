@@ -14,7 +14,7 @@ const Home: NextPage = () => {
     <div id={style['container']}>
       <NavBar></NavBar>
       <div className={style['parallax']}>
-          <ScrollAnimation animateIn="bounceInRight" delay={300}>
+          <ScrollAnimation animateIn="bounceInRight" delay={300} animateOnce={true}>
             <div id={style['home-container']}>
                   <div className={style['introduction-hello']}>
                     Hello, My Name is

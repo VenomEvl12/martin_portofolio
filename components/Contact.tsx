@@ -7,7 +7,7 @@ const Contact = () => {
         <div id={style['container']}>
             <div className={style['parallax']}>
                 <div id={style['content-container']}>
-                    <ScrollAnimation animateIn="bounceIn">
+                    <ScrollAnimation animateIn="bounceIn" animateOnce={true}>
                         <div className={style['title']}>
                             <h2>Contact Me</h2>
                         </div>

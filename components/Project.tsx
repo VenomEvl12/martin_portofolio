@@ -6,7 +6,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 const Project = () => {
     return (
         <div id={style['container']}>
-            <ScrollAnimation animateIn="bounceInLeft">
+            <ScrollAnimation animateIn="bounceInLeft" animateOnce={true}>
                 <div className={style['title']}>
                     Projects
                 </div>
