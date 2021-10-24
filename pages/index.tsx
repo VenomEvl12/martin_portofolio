@@ -14,16 +14,25 @@ const Home: NextPage = () => {
     <div id={style['container']}>
       <NavBar></NavBar>
       <div className={style['parallax']}>
-          <ScrollAnimation animateIn="bounceInRight" delay={300} animateOnce={true}>
             <div id={style['home-container']}>
-                  <div className={style['introduction-hello']}>
-                    Hello, My Name is
-                  </div>
-                  <div className={style['introduction-name']}>
-                    Martin Wijaya
-                  </div>
+            <ScrollAnimation animateIn="bounceInRight" delay={300} animateOnce={true}>
+              <div id={style['introduction-container']}>
+                <div className={style['introduction-hello']}>
+                  Hello, My Name is
+                </div>
+                <div className={style['introduction-name']}>
+                  Martin Wijaya
+                </div>
+              </div>
+            </ScrollAnimation>
+            <ScrollAnimation animateIn="bounceInLeft" delay={300} animateOnce={true}>
+              <div id={style['logo-container']}>
+                <div>
+                  <img id={style['main-logo']} src="/assets/MW-Putih.png"></img>
+                </div>
+              </div>
+            </ScrollAnimation>
             </div>
-          </ScrollAnimation>
       </div>
       <div>
         <About></About>

@@ -1,7 +1,7 @@
 @use 'styles/colors'
 
 #container
-    height: 100vh
+    height: 100%
 
     .parallax
         z-index: -1
@@ -25,6 +25,7 @@
 
         #icon-container
             margin-top: 4vh
+            margin-bottom: 8rem
             display: grid
             grid-template-columns: repeat(5, 2fr)
 
@@ -57,8 +58,4 @@
         @media (max-width: 667px)
             #icon-container
                 grid-template-columns: repeat(3, 2fr) !important
-
-@media (max-width: 667px)
-    #container
-        height: 125vh
         

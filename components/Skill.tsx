@@ -26,8 +26,8 @@ const Skill = () => {
                  </ScrollAnimation>
                  <div id={style['icon-container']}>
                      {imgs.map((item) => (
-                         <ScrollAnimation animateIn="bounceIn" delay={item.delay} animateOnce={true}>
-                            <div className={style['icon']} key={item.title}>
+                         <ScrollAnimation animateIn="bounceIn" delay={item.delay} animateOnce={true} key={item.title}>
+                            <div className={style['icon']}>
                                 <img src={'assets/icon/' + item.src}/>
                                 <h3>{item.title}</h3>
                             </div>

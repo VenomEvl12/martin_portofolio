@@ -1,14 +1,9 @@
 
 #container
     width: 100%
-    height: 100vh
-
-    .test
-        position: relative
-        height: 200vh
+    height: 100%
    
 .parallax
-    position: relative
     z-index: -1
     height: 100%
     width: 100%
@@ -22,14 +17,31 @@
 
     #home-container
         display: flex
-        justify-content: center
-        flex-direction: column
+        justify-content: space-between
+        flex-direction: row
         padding-top: 20vh
-        padding-left: 25vw
-        padding-right: 15vw
+        padding-left: 13vw
+        padding-right: 8vw
+        padding-bottom: 15vh
+        flex-wrap: wrap
+        align-items: flex-start
 
-        .introduction-hello
-            font-size: 2em
-        
-        .introduction-name
-            font-size: 4em
+        #introduction-container
+            display: flex
+            justify-content: center
+            flex-direction: column
+
+            .introduction-hello
+                font-size: 2em
+            
+            .introduction-name
+                font-size: 4em
+
+        #main-logo
+            height: 500px
+            width: 500px
+
+@media(max-width: 550px)
+    #main-logo
+        height: 300px !important
+        width: 300px !important
