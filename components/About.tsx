@@ -5,7 +5,9 @@ import ScrollAnimation from 'react-animate-on-scroll'
 const About = () => {
     const socialMedias = [
         {key: 'linkedin', src: 'assets/about-icon/linkedin.png', href:'https://www.linkedin.com/in/martin-w-122916a8/'},
-        {key: 'github', src: 'assets/about-icon/github.png', href:'https://github.com/VenomEvl12'}
+        {key: 'github', src: 'assets/about-icon/github.png', href:'https://github.com/VenomEvl12'},
+        {key: 'line', src: 'assets/about-icon/line.png', href:'https://github.com/VenomEvl12'},
+        {key: 'instagram', src: 'assets/about-icon/instagram.png', href:'https://github.com/VenomEvl12'},
     ]
 
     return (
