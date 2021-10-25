@@ -12,6 +12,7 @@ const About = () => {
 
     return (
         <div id={style['container']}>
+            <div id="about-scroll"></div>
             <ScrollAnimation animateIn="flipInX" delay={300} animateOnce={true}>
                 <div className={style['title']}>
                     About

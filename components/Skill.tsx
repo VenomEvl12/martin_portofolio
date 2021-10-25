@@ -18,6 +18,7 @@ const Skill = () => {
     ]
     return (
         <div id={style['container']}>
+            <div id="skill-scroll"></div>
              <div className={style['parallax']}>
                  <ScrollAnimation animateIn="bounceIn" animateOnce={true}>
                     <div className={style['title']}>

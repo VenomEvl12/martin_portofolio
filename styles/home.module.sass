@@ -16,13 +16,16 @@
     color: white
 
     #home-container
+        overflow-y: hidden
+        overflow-x: hidden
         display: flex
-        justify-content: space-between
+        justify-content: center
         flex-direction: row
         padding-top: 20vh
-        padding-left: 13vw
-        padding-right: 8vw
+        padding-left: 15vw
+        padding-right: 15vw
         padding-bottom: 15vh
+        margin-bottom: 2rem
         flex-wrap: wrap
         align-items: flex-start
 
@@ -30,6 +33,7 @@
             display: flex
             justify-content: center
             flex-direction: column
+            text-align: end
 
             .introduction-hello
                 font-size: 2em
@@ -37,11 +41,48 @@
             .introduction-name
                 font-size: 4em
 
-        #main-logo
-            height: 500px
-            width: 500px
+        #logo-container
+            position: relative
+            margin-top: -3rem
+            margin-left: 2rem
+            margin-right: 2rem
 
-@media(max-width: 550px)
+            #main-logo
+                padding-left:7.5rem
+                padding-top: 8em
+                img
+                    height: 400px
+                    width: 400px
+
+            #main-logo-outline
+                position: absolute
+                z-index: 1
+                top: 0
+                left: 0
+                animation: rotate linear 5s 
+                animation-iteration-count: infinite
+                img
+                    height: 625px
+                    width: 625px
+
+@media(max-width: 768px)
     #main-logo
-        height: 300px !important
-        width: 300px !important
+        margin-top: 4rem
+        padding-left: 1rem !important
+        padding-top: 5rem !important
+        img
+            height: 250px !important
+            width: 250px !important
+
+    #main-logo-outline
+        margin-left: -4rem
+        img
+            height: 400px !important
+            width: 400px !important
+
+@keyframes rotate
+    0%
+        transform: rotateZ(0deg)
+    100%
+        transform: rotateZ(360deg)
+        

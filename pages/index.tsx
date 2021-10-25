@@ -13,6 +13,7 @@ const Home: NextPage = () => {
   return (
     <div id={style['container']}>
       <NavBar></NavBar>
+      <div id="home-scroll"></div>
       <div className={style['parallax']}>
             <div id={style['home-container']}>
             <ScrollAnimation animateIn="bounceInRight" delay={300} animateOnce={true}>
@@ -27,9 +28,13 @@ const Home: NextPage = () => {
             </ScrollAnimation>
             <ScrollAnimation animateIn="bounceInLeft" delay={300} animateOnce={true}>
               <div id={style['logo-container']}>
-                <div>
-                  <img id={style['main-logo']} src="/assets/MW-Putih.png"></img>
+                <div id={style['main-logo']} >
+                  <img src="/assets/MW-Putih.png"/>
                 </div>
+                <div id={style['main-logo-outline']} >
+                  <img src="/assets/circle.png"/>
+                </div>
+                
               </div>
             </ScrollAnimation>
             </div>
