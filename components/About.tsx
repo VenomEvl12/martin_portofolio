@@ -1,5 +1,6 @@
 import style from './About.module.sass'
 import ScrollAnimation from 'react-animate-on-scroll'
+import { useEffect } from 'react'
 
 
 const About = () => {
@@ -22,10 +23,10 @@ const About = () => {
                 <div id={style['container-description']}>
                     <div className={style['description']}>
                         <div className={style['title-name']}>
-                            Martin Wijaya
+                            Who Am I ?
                         </div>
                         <div className={style['biography']}>
-                            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without
+                         Hi! My Name is Martin Wijaya. Currently I am a College Student at Bina Nusantara University, taking a major on Game Application Technology and also a full time Teaching Assistant at Software Laboratory Center, Bina Nusantara.
                         </div>
                         <div className={style['icons']}>
                             {socialMedias.map((item) => (

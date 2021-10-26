@@ -7,6 +7,9 @@ import Skill from '../components/Skill'
 import style from '../styles/home.module.sass'
 import ScrollAnimation from 'react-animate-on-scroll'
 import "animate.css/animate.compat.css";
+import Typist from 'react-typist';
+import "react-typist/dist/Typist.css"
+import { useState } from 'react'
 
 const Home: NextPage = () => {
 
@@ -22,7 +25,12 @@ const Home: NextPage = () => {
                   Hello, My Name is
                 </div>
                 <div className={style['introduction-name']}>
-                  Martin Wijaya
+                  <Typist startDelay={1500}>
+                    Martin Wijaya
+                  </Typist>
+                </div>
+                <div className={style['introduction-hello']}>
+                  MW20-1
                 </div>
               </div>
             </ScrollAnimation>
@@ -34,7 +42,6 @@ const Home: NextPage = () => {
                 <div id={style['main-logo-outline']} >
                   <img src="/assets/circle.png"/>
                 </div>
-                
               </div>
             </ScrollAnimation>
             </div>
