@@ -4,17 +4,17 @@ import style from './Skill.module.sass'
 
 const Skill = () => {
     const imgs = [
+        {title: 'Unity', src: 'unity.png', delay: 1000 },
+        {title: 'ASP.NET', src: 'asp.png', delay: 500 },
+        {title: 'Java', src: 'java.png', delay: 600 },
         {title: 'HTML', src: 'html.png', delay: 0 },
         {title: 'Sass', src: 'sass.png', delay: 100 },
         {title: 'JavaScript', src: 'js.png', delay: 200},
         {title: 'React', src: 'react.png', delay: 300 },
         {title: 'Angular', src: 'angular.png', delay: 400 },
-        {title: 'ASP.NET', src: 'asp.png', delay: 500 },
-        {title: 'Java', src: 'java.png', delay: 600 },
         {title: 'C/C++', src: 'C.png', delay: 700 },
         {title: 'Python', src: 'python.png', delay: 800 },
         {title: 'Android', src: 'android_studio.png', delay: 900},
-        {title: 'Unity', src: 'unity.png', delay: 1000 },
     ]
     return (
         <div id={style['container']}>

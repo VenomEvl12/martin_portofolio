@@ -18,19 +18,19 @@ const NavBar = () => {
 
     const scroll = () => {
         
-        if(scrollY <= about?.offsetTop){
+        if(scrollY <= about?.offsetTop - 40){
             setColor("white")
             return;
         }
-        if(scrollY >= about?.offsetTop - 20 && scrollY < (about?.offsetTop + about?.offsetHeight) - 20){
+        if(scrollY >= about?.offsetTop - 20 && scrollY < skill?.offsetTop - 20){
             setColor("black")
             return;
         }
-        if(scrollY >= skill?.offsetTop - 20 && scrollY < (skill?.offsetTop + skill?.offsetHeight) - 20){
+        if(scrollY >= skill?.offsetTop - 20 && scrollY < project?.offsetTop - 20){
             setColor("white")
             return;
         }
-        if(scrollY >= project?.offsetTop - 20 && scrollY < (project?.offsetTop + project?.offsetHeight) - 20){
+        if(scrollY >= project?.offsetTop - 20 && scrollY < contact?.offsetTop - 20){
             setColor("black")
             return;
         }

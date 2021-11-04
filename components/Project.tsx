@@ -7,7 +7,7 @@ const Project = () => {
     return (
         <div id={style['container']}>
             <div id="project-scroll"></div>
-            <ScrollAnimation animateIn="bounceInLeft" animateOnce={true}>
+            <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
                 <div className={style['title']}>
                     Projects
                 </div>

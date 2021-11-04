@@ -9,7 +9,6 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import "animate.css/animate.compat.css";
 import Typist from 'react-typist';
 import "react-typist/dist/Typist.css"
-import { useState } from 'react'
 
 const Home: NextPage = () => {
 
