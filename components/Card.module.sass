@@ -1,0 +1,73 @@
+.card-container
+    display: block
+    margin-top: 3rem
+    margin-left: 1.5rem
+    margin-right: 1.5rem
+    width: 25rem
+    height: 15rem
+    perspective: 800px
+
+    .card-box
+        height: 100%
+        width: 100%
+        box-shadow: 0px 3px 5px 2px rgb(200, 200, 200)
+        border-radius: 5px
+        transition: 0.5s
+        transform-style: preserve-3d
+        display: flex
+        justify-content: center
+
+        
+
+.front, .back
+    position: absolute
+    top: 0
+    height: 100%
+    width: 100%
+    backface-visibility: hidden
+    -webkit-backface-visibility: hidden
+
+.front
+    width: auto
+    img
+        border: 1px solid rgb(200, 200, 200)
+        height: 100%
+        width: 100%
+        transition: 0.5s
+
+.back
+    transform: rotateY(180deg)
+    background: rgb(0, 0, 0, 0.5)
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    color: white
+    .title
+        opacity: 2
+        font-size: 1.6em
+        text-decoration: underline
+    .description
+        opacity: 1
+        font-size: 1.2em
+        margin-top: 1rem
+        text-align: center
+
+.card-container:hover .card-box
+    transform: rotateY(180deg)
+
+    img
+        transform: rotateY(180deg)
+
+@media (max-width: 500px)
+    .card-container
+        height: 10rem
+        width: 20rem
+        margin-left: 0.5rem
+        margin-right: 0.5rem
+
+@media (max-width: 320px) 
+    .card-container
+        height: 7rem
+        width: 15rem
+        

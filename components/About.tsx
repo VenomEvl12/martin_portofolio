@@ -8,8 +8,8 @@ const About = () => {
     const socialMedias = [
         {key: 'linkedin', src: 'assets/about-icon/linkedin.png', href:'https://www.linkedin.com/in/martin-w-122916a8/'},
         {key: 'github', src: 'assets/about-icon/github.png', href:'https://github.com/VenomEvl12'},
-        {key: 'line', src: 'assets/about-icon/line.png', href:'https://github.com/VenomEvl12'},
-        {key: 'instagram', src: 'assets/about-icon/instagram.png', href:'https://github.com/VenomEvl12'},
+        {key: 'line', src: 'assets/about-icon/line.png', href:'line://ti/p/nexus_12'},
+        {key: 'instagram', src: 'assets/about-icon/instagram.png', href:'https://www.instagram.com/martin.wij12/'},
     ]
 
     return (
@@ -38,7 +38,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className={style['my-image']}>
-                        <img src='/assets/Kambing.jpg'/>
+                        <img src='/assets/foto_diri.png'/>
                     </div>
                 </div>
             </ScrollAnimation>
