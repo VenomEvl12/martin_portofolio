@@ -4,17 +4,19 @@ import style from './Skill.module.sass'
 
 const Skill = () => {
     const imgs = [
-        {title: 'Unity', src: 'unity.png', delay: 1000 },
-        {title: 'ASP.NET', src: 'asp.png', delay: 500 },
-        {title: 'Java', src: 'java.png', delay: 600 },
-        {title: 'HTML', src: 'html.png', delay: 0 },
-        {title: 'Sass', src: 'sass.png', delay: 100 },
-        {title: 'JavaScript', src: 'js.png', delay: 200},
-        {title: 'React', src: 'react.png', delay: 300 },
-        {title: 'Angular', src: 'angular.png', delay: 400 },
-        {title: 'C/C++', src: 'C.png', delay: 700 },
-        {title: 'Python', src: 'python.png', delay: 800 },
-        {title: 'Android', src: 'android_studio.png', delay: 900},
+        {title: 'C#', src: 'c-sharp.png', delay: 0},
+        {title: 'Java', src: 'java.png', delay: 100 },
+        {title: 'HTML', src: 'html.png', delay: 200 },
+        {title: 'Sass', src: 'sass.png', delay: 300 },
+        {title: 'JavaScript', src: 'js.png', delay: 400},
+        {title: 'Python', src: 'python.png', delay: 500 },
+        {title: 'C/C++', src: 'C.png', delay: 600 },
+        {title: 'Sql server', src: 'sql-server.png', delay: 700 },
+        {title: 'Unity', src: 'unity.png', delay: 800 },
+        {title: 'ASP.NET', src: 'asp.png', delay: 900 },
+        {title: 'React', src: 'react.png', delay: 1000 },
+        {title: 'Android', src: 'android_studio.png', delay: 1100},
+        {title: 'Angular', src: 'angular.png', delay: 1200 },
     ]
     return (
         <div id={style['container']}>

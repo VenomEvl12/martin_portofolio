@@ -5,12 +5,12 @@ import Card from './Card'
 
 const Project = () => {
     const datas = [
-        { url: 'assets/projects/maswus.png', title: 'MasWus', description: 'it is a forum application where people can share story like Kaskus but simplified for Core Training 21-1 session case'},
-        { url: 'assets/projects/youRJube.png', title: 'youRJube', description: 'a '},
-        { url: 'assets/projects/CattleShopIndonesia.png', title: 'Cattle Shop Indonesia', description: 'a '},
-        { url: 'assets/projects/Laravel_Project.png', title: 'MbWek Center', description: 'a'},
-        { url: 'assets/projects/Knight_Vow.png', title: 'Knight Vow', description: 'a '},
-        { url: 'assets/projects/SmallFantasy.png', title: 'Small Fantasy', description: 'a '},
+        { url: 'assets/projects/maswus.png', title: 'MasWus', description: 'It is PSD H3S1 case for Core Training 21-1. built with asp.net. it is a simple forum website with CRUD in it, inspired by Kaskus.'},
+        { url: 'assets/projects/youRJube.png', title: 'youRJube', description: 'It is website from Test Progressive Assistant (TPA). Built with Angular (Front End), Golang (Backend), Postgre(Database), and Firebase(Database). we tasked to create a website similar to Youtube but simpler.'},
+        { url: 'assets/projects/CattleShopIndonesia.png', title: 'Cattle Shop Indonesia', description: 'It is Mobile App Development project case for students of Bina Nusantara, built with Android Studio, It is a simple review app, with fetch API, CRUD, and google map. Inpired by line today'},
+        { url: 'assets/projects/Laravel_Project.png', title: 'MbWek Center', description: 'It is Web Programing project case for students of Bina Nusantara, built with Laravel 8. It is a simple purchase shop with CRUD in it'},
+        { url: 'assets/projects/Knight_Vow.png', title: 'Knight Vow', description: 'It is 3D RPG game, created with Unity, It is Test Progressive Assistant (TPA) for me to develop myself in 3D game development.'},
+        { url: 'assets/projects/SmallFantasy.png', title: 'Small Fantasy', description: "It is simple 2D combat game, created with Unity for Game Programming's project assigment"},
     ]
 
     return (
