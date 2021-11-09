@@ -10,11 +10,15 @@ import "animate.css/animate.compat.css";
 import Typist from 'react-typist';
 import "react-typist/dist/Typist.css"
 import FooterComponent from '../components/FooterComponent'
+import Head from 'next/head'
 
 const Home: NextPage = () => {
 
   return (
     <div id={style['container']}>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <NavBar></NavBar>
       <div id="home-scroll"></div>
       <div className={style['parallax']}>
