@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './ProjectCard.module.sass'
 
-const ProjectCard = (props) => {
+const ProjectCard = (props : any) => {
     return (
         <div className={style['card-container']}>
             <div>

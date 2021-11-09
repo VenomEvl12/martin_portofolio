@@ -1,7 +1,8 @@
-import style from './About.module.sass'
 import ScrollAnimation from 'react-animate-on-scroll'
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import style from './About.module.sass'
+import styles from './test.module.css'
+import React from 'react';
 
 
 const About = () => {
@@ -47,45 +48,46 @@ const About = () => {
                 <div className={style['timeline-title']}>
                     <h2>Education & Working Experience</h2>
                 </div>
-                <VerticalTimeline lineColor= {"rgb(200, 200, 200)"}>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: 'white', border: '1px solid rgb(200, 200, 200)'}}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)'}}
-                        dateClassName={style['black-text']}
-                        date="2019 Sep - 2023"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} >
-                        <h3 className="vertical-timeline-element-title">Bina Nusantara Student</h3>
-                        <p>
-                            Studying Game Application and Technology
-                        </p>
-                    </VerticalTimelineElement>
-                    <VerticalTimelineElement
-                        className="vertical-timeline-element--work"
-                        contentStyle={{ background: 'rgb(33, 150, 243)', color: 'white', border: '1px solid rgb(200, 200, 200)'}}
-                        contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)'}}
-                        dateClassName={style['black-text']}
-                        date="2020 Feb - 2022 Feb"
-                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} >
-                        <h3 className="vertical-timeline-element-title">Teaching Assistant</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Software Laboratory Center Bina Nusantara</h4>
-                        <p>
-                            Mainly Teaching, case making, and marking various subjects for students in Computer Science Faculty
-                        </p>
-                        <p>
-                            Participate in trainings and self-development projects such as
-                        </p>
-                        <p>
-                            • 3D game development <br/>
-                            • Desktop application <br/>
-                            • Website programming <br/>
-                            • Mobile apps <br/>
-                            • Network <br/>
-                            • and Research interest
-                        </p>
-                    </VerticalTimelineElement>
-                </VerticalTimeline>
-
+                <div className='vertical-timeline.vertical-timeline-custom-line'>
+                    <VerticalTimeline lineColor={'rgb(220, 220, 220)'}>
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--work"
+                            contentStyle={{ background: 'rgb(33, 150, 243)', color: 'white', border: '1px solid rgb(200, 200, 200)'}}
+                            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)'}}
+                            dateClassName={style['black-text']}
+                            date="2019 Sep - 2023"
+                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} >
+                            <h3 className="vertical-timeline-element-title">Bina Nusantara Student</h3>
+                            <p>
+                                Studying Game Application and Technology
+                            </p>
+                        </VerticalTimelineElement>
+                        <VerticalTimelineElement
+                            className="vertical-timeline-element--work"
+                            contentStyle={{ background: 'rgb(33, 150, 243)', color: 'white', border: '1px solid rgb(200, 200, 200)'}}
+                            contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)'}}
+                            dateClassName={style['black-text']}
+                            date="2020 Feb - 2022 Feb"
+                            iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} >
+                            <h3 className="vertical-timeline-element-title">Teaching Assistant</h3>
+                            <h4 className="vertical-timeline-element-subtitle">Software Laboratory Center Bina Nusantara</h4>
+                            <p>
+                                Mainly Teaching, case making, and marking various subjects for students in Computer Science Faculty
+                            </p>
+                            <p>
+                                Participate in trainings and self-development projects such as
+                            </p>
+                            <p>
+                                • 3D game development <br/>
+                                • Desktop application <br/>
+                                • Website programming <br/>
+                                • Mobile apps <br/>
+                                • Network <br/>
+                                • and Research interest
+                            </p>
+                        </VerticalTimelineElement>
+                    </VerticalTimeline>
+                </div>
             </div>
         </div>
     )

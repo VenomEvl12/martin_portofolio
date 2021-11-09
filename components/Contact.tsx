@@ -5,7 +5,7 @@ import emailjs from 'emailjs-com'
 
 const Contact = () => {
 
-    function sendEmail(e){
+    function sendEmail(e : any){
         e.preventDefault();
 
         emailjs.sendForm(
@@ -14,7 +14,7 @@ const Contact = () => {
             e.target,
             'user_49Jjd1R195VkDWHdYoO5o'
             ).then(res => {
-                var doc = document.getElementById("form");
+                var doc : any = document.getElementById("form");
                 doc?.reset();
                 alert("Send message success !")
             }).catch(err => {

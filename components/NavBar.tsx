@@ -11,11 +11,10 @@ const NavBar = () => {
         {name: 'Projects', href: "#project-scroll"},
         {name: 'Contact', href: "#contact-scroll"},
     ]
-    var about;
-    var skill;
-    var project;
-    var contact;
-    var contactContainer;
+    var about: any;
+    var skill : any;
+    var project : any;
+    var contact : any;
 
     const scroll = () => {
 
