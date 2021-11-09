@@ -47,7 +47,7 @@ const About = () => {
                 <div className={style['timeline-title']}>
                     <h2>Education & Working Experience</h2>
                 </div>
-                <VerticalTimeline lineColor= 'rgb(200, 200, 200)'>
+                <VerticalTimeline lineColor= {"rgb(200, 200, 200)"}>
                     <VerticalTimelineElement
                         className="vertical-timeline-element--work"
                         contentStyle={{ background: 'rgb(33, 150, 243)', color: 'white', border: '1px solid rgb(200, 200, 200)'}}
