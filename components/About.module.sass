@@ -8,6 +8,7 @@
     padding-right: 15vw
     display: flex
     flex-direction: column
+    overflow-x: hidden
 
     .title
         text-align: center
@@ -31,6 +32,9 @@
             height: 100% !important
         .my-image
             margin-top: 4vh
+        .biography
+            padding-left: 2rem !important
+            padding-right: 2rem !important
 
     @media (max-width: 320px)
         #container-description
@@ -38,8 +42,14 @@
 
         .icons
             img
-                width: 35px !important
-                height: 35px !important
+                width: 20px !important
+                height: 20px !important
+
+    @media (min-width: 320px) and (max-width: 450px)
+        .icons
+            img
+                width: 30px !important
+                height: 30px !important
 
     #container-description
         margin-bottom: 7vh
