@@ -1,5 +1,5 @@
 @use 'styles/colors'
-    
+
 #container
     width: 100%
     height: 100%
@@ -24,7 +24,6 @@
         align-items: center
         flex-direction: column
         justify-content: center
-    
 
         .title
             margin-top: 7rem
@@ -35,7 +34,7 @@
                 margin: 0
 
         #content-container
-            width: 50vw
+            width: 50rem
             margin-bottom: 5rem
 
         #contact-container
@@ -53,7 +52,7 @@
                     margin-top: 2rem
                     display: flex
                     flex-direction: column
-                    width: 50%
+                    width: 60%
 
                     input
                         margin-top: 0.5rem
@@ -90,6 +89,14 @@
                 button:hover
                     cursor: pointer
                     background-color: colors.$mid-darker-blue
-                    
+
                 button:focus
                     background-color: colors.$blue
+
+@media (max-width: 868px)
+    #content-container
+        width: 90% !important
+
+    #form
+        label
+            width: 70% !important
