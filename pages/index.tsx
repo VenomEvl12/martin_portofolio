@@ -25,7 +25,7 @@ const Home: NextPage = () => {
                   Hello, My Name is
                 </div>
                 <div className={style['introduction-name']}>
-                  <Typist startDelay={1500}>
+                  <Typist startDelay={1500} avgTypingDelay={300}>
                     Martin Wijaya
                   </Typist>
                 </div>
