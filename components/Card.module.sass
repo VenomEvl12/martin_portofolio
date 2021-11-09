@@ -61,14 +61,24 @@
         filter: blur(2px)
         transform: rotateY(180deg)
 
-@media (max-width: 500px)
+@media (min-width: 341px) and (max-width: 500px)
     .card-container
         height: 10rem
         width: 20rem
         margin-left: 0.5rem
         margin-right: 0.5rem
+        .title
+            font-size: 1rem
+        .description
+            margin-top: 0.7rem !important
+            font-size: 0.8rem
 
-@media (max-width: 320px)
+@media (max-width: 340px)
     .card-container
         height: 7rem
         width: 15rem
+        .title
+            font-size: 0.8rem
+        .description
+            margin-top: 0.5rem !important
+            font-size: 0.6rem
