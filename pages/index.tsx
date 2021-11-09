@@ -9,6 +9,7 @@ import ScrollAnimation from 'react-animate-on-scroll'
 import "animate.css/animate.compat.css";
 import Typist from 'react-typist';
 import "react-typist/dist/Typist.css"
+import FooterComponent from '../components/FooterComponent'
 
 const Home: NextPage = () => {
 
@@ -50,8 +51,9 @@ const Home: NextPage = () => {
         <Skill></Skill>
         <Project></Project>
         <Contact></Contact>
+        <FooterComponent></FooterComponent>
       </div>
-      {/* Free Broll by <a target="_blank" href="http://www.videezy.com">Videezy</a> */}
+
     </div>
   )
 }

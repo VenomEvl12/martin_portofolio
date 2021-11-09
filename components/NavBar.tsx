@@ -15,9 +15,11 @@ const NavBar = () => {
     var skill;
     var project;
     var contact;
+    var contactContainer;
 
     const scroll = () => {
-        
+
+
         if(scrollY <= about?.offsetTop - 40){
             setColor("white")
             return;
@@ -34,11 +36,16 @@ const NavBar = () => {
             setColor("black")
             return;
         }
-        if(scrollY >= contact?.offsetTop - 20){
+        if(scrollY >= contact?.offsetTop - 20 && scrollY < contact?.offsetTop + 180){
             setColor("white")
             return;
         }
-        
+        if(scrollY >= contact?.offsetTop + 180){
+            setColor("black")
+            return;
+        }
+
+
     }
 
     useEffect(() => {

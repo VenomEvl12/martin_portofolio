@@ -33,7 +33,7 @@ const Contact = () => {
                             <h2>Contact Me</h2>
                         </div>
                         <div id={style['contact-container']}>
-                            <form action="" onSubmit={sendEmail} id="form">
+                            <form action="" onSubmit={sendEmail}>
                                 <label>
                                         Full Name :
                                         <input type="text" name="name" required/>
