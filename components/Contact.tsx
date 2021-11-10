@@ -26,7 +26,10 @@ const Contact = () => {
     return (
         <div id={style['container']}>
             <div id="contact-scroll"></div>
-            <div className={style['parallax']}>
+            <video autoPlay muted loop id={style['video-background']}>
+                <source src="/assets/galaxy.mp4" type="video/mp4"/>
+            </video>
+            <div className={style['form-container']}>
                 <div id={style['content-container']}>
                     <ScrollAnimation animateIn="bounceIn" animateOnce={true}>
                         <div className={style['title']}>
