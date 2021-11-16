@@ -11,7 +11,8 @@ const About = () => {
         {key: 'github', src: 'assets/about-icon/github.png', href:'https://github.com/VenomEvl12'},
         {key: 'line', src: 'assets/about-icon/line.png', href:'line://ti/p/nexus_12'},
         {key: 'instagram', src: 'assets/about-icon/instagram.png', href:'https://www.instagram.com/martin.wij12/'},
-        {key: 'facebook', src: 'assets/about-icon/facebook.png', href:'https://www.facebook.com/martin.wijaya.904'}
+        {key: 'facebook', src: 'assets/about-icon/facebook.png', href:'https://www.facebook.com/martin.wijaya.904'},
+        {key: 'drive', src:'assets/about-icon/drive.png', href:'https://drive.google.com/file/d/1GV67Yx-oCCNErnYkq7AM-oz8_PrvQ-QI/view?usp=sharing'}
     ]
 
     return (
